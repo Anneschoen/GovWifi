@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="what-is-govwifi">
+              About GovWifi
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#technical">
+              Requirements
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sponsor">
+              Sponsor
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sign-up">
+              Sign up your organisation
+            </a>
+        </li>
+      </ul>
+
+    <div class="govuk-grid-column-one-third">
+      <ul class="govuk-list">
+
+        <li>
+          <a class="govuk-link" href="/technical">Infrastructure requirements</a>
+        </li>
+
+        <li>
+          <a class="govuk-link" href="/operational">Operational requirements</a>
+        </li>
+
+        <li>
+          <a class="govuk-link" href="/get-ready-before">What to get ready before</a>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        What to get ready before you sign up
+      </h1>
+
+      <p>
+        Make sure you have gathered feedback from different decision makers in your organisation. You should speak to your IT manager for technical input. Also, ensure you have come to an agreement with your financial and business lead before installing GovWifi.
+      </p>
+
+      <h2 class="govuk-heading-s">
+        What the setup process will look like
+      </h2>
+
+      <p>
+        We have a step by step process that will run you through the set up. We will provide recommendations and further advice along the way, including how to:
+      </p>
+
+      
+      <ul class="govuk-list govuk-list--bullet">
+        <li>add the IP address</li>
+        <li>choose the technical infrastructure</li>
+        <li>set up a support model</li>
+      </ul>
+
+      <h2 class="govuk-heading-s">
+        Running a trial
+      </h2>
+
+      <p>
+        You must provide a suitable amount of internet bandwidth for the anticipated number of users. Plan for 50% of the AP vendor’s recommended client device count per AP radio. Stay well under the vendor’s published maximum figure (for example, one access point per block of 20 users, located in the middle of each group).
+      </p>
+
+
+    </div>
+</div>
+
+{% endblock %}

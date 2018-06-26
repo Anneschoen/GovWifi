@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="what-is-govwifi">
+              About GovWifi
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#technical">
+              Requirements
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sponsor">
+              Sponsor
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sign-up">
+              Sign up your organisation
+            </a>
+        </li>
+      </ul>
+
+
+      <h1 class="govuk-heading-l">
+        You want to have GovWifi at your organisation
+      </h1>
+<p>
+  For a full scale inmplemetation we would recommend to first test
+  GovWifi in your organisation. This sign up will give you a 3 month trial phase. After that we will extend your account for scale.
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Email address
+        </label>
+        <span id="email-hint" class="govuk-hint">
+          Please, use a group admin e-mail address from your IT team
+        </span>
+        <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+      </div>
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            <h3 class="govuk-fieldset__heading">
+              Who will be using GovWifi?
+            </h3>
+          </legend>
+
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+              Civil Servant staff members
+            </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+              Visitors from other government departments
+            </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              Visitors from non-Government departments
+            </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              Contractors
+            </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            <h3 class="govuk-fieldset__heading">
+              Who will provide GovWifi support at yuor organisation?
+            </h3>
+          </legend>
+
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+              Internal IT team
+            </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+              Contracted IT team
+            </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button">
+        Sign up for the trial
+      </button>
+
+    </div>
+</div>
+
+{% endblock %}

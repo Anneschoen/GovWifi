@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="what-is-govwifi">
+              About GovWifi
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#technical">
+              Requirements
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sponsor">
+              Sponsor
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="sign-up">
+              Sign up your organisation
+            </a>
+        </li>
+      </ul>
+
+    <div class="govuk-grid-column-one-third">
+      <ul class="govuk-list">
+
+        <li>
+          <a class="govuk-link" href="/technical">Infrastructure requirements</a>
+        </li>
+
+        <li>
+          <a class="govuk-link" href="/operational">Operational requirements</a>
+        </li>
+
+        <li>
+          <a class="govuk-link" href="/get-ready-before">What to get ready before</a>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Infrastructure requirements
+      </h1>
+
+      <h2 class="govuk-heading-s">
+        Bandwidth
+      </h2>
+
+      <p>
+        You must provide a suitable amount of internet bandwidth for the anticipated number of users. Plan for 50% of the AP vendor’s recommended client device count per AP radio. Stay well under the vendor’s published maximum figure (for example, one access point per block of 20 users, located in the middle of each group).
+      </p>
+
+      <h2 class="govuk-heading-s">
+        Network’s client’s separation
+      </h2>
+
+      <p>
+        Wireless Client Isolation is a security feature that prevents wireless clients from communicating with one another.
+      </p>
+
+      <h2 class="govuk-heading-s">
+        WPA2 Enterprise with AES encryption
+      </h2>
+
+      <p>
+        WPA2 replaced WPA. WPA2, which requires testing and certification by the Wi-Fi Alliance, implements the mandatory elements of IEEE 802.11i. In particular, it includes mandatory support for CCMP, an AES-based encryption mode with strong security. Certification began in September, 2004, WPA2 certification is mandatory for all new devices to bear the Wi-Fi trademark.
+      </p>
+
+
+      <h2 class="govuk-heading-s">
+        Basic level of DNS filtering
+      </h2>
+
+      <p>
+        You must provide an internet connection with a basic content filtering service to all wifi users. The UK public sector DNS is an appropriate solution.
+      </p>
+
+    </div>
+</div>
+
+{% endblock %}
