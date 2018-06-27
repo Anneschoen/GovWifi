@@ -58,3 +58,18 @@ $govuk-global-styles: true;
 // @import 'patterns/task-list';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.task-list-number{
+  position: relative;
+  left: -25px;
+  margin-right: -25px;
+}
+
+// .status{
+//   background-color: $govuk-link-colour;
+//   color: #fff;
+//   padding: 5px 5px 4px 5px !important;
+//   margin: 5px 0px 5px 5px;
+//   display: inline-block;
+//   float: right;
+// }
